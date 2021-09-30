@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22959C827050DC7008ED4F4 /* FormManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22959C727050DC7008ED4F4 /* FormManagementViewController.swift */; };
+		B22959CA27050E7A008ED4F4 /* TableViewManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22959C927050E7A008ED4F4 /* TableViewManagementViewController.swift */; };
+		B22959CC27050EC2008ED4F4 /* CollectionViewManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22959CB27050EC2008ED4F4 /* CollectionViewManagementViewController.swift */; };
+		B22959CF2705498D008ED4F4 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22959CE2705498D008ED4F4 /* UIViewControllerExtensions.swift */; };
 		B29D43C52700050E00077E58 /* ComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D43C42700050E00077E58 /* ComponentsViewController.swift */; };
 		B29D43C9270005C700077E58 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29D43C7270005C700077E58 /* ComponentTableViewCell.swift */; };
 		B29D43CA270005C700077E58 /* ComponentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29D43C8270005C700077E58 /* ComponentTableViewCell.xib */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B22959C727050DC7008ED4F4 /* FormManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormManagementViewController.swift; sourceTree = "<group>"; };
+		B22959C927050E7A008ED4F4 /* TableViewManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewManagementViewController.swift; sourceTree = "<group>"; };
+		B22959CB27050EC2008ED4F4 /* CollectionViewManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewManagementViewController.swift; sourceTree = "<group>"; };
+		B22959CE2705498D008ED4F4 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		B29D43C42700050E00077E58 /* ComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsViewController.swift; sourceTree = "<group>"; };
 		B29D43C7270005C700077E58 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 		B29D43C8270005C700077E58 /* ComponentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentTableViewCell.xib; sourceTree = "<group>"; };
@@ -86,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22959CD2705497A008ED4F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B22959CE2705498D008ED4F4 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B29D43C62700057700077E58 /* XIBViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +151,7 @@
 		B2A4B07B270001010080D466 /* iOSStoryboardBasedDemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				B22959CD2705497A008ED4F4 /* Extensions */,
 				B29D43CB2700086C00077E58 /* Model */,
 				B29D43C62700057700077E58 /* XIBViews */,
 				B2A4B12A270003880080D466 /* Components */,
@@ -171,6 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				B29D43C42700050E00077E58 /* ComponentsViewController.swift */,
+				B22959C727050DC7008ED4F4 /* FormManagementViewController.swift */,
+				B22959C927050E7A008ED4F4 /* TableViewManagementViewController.swift */,
+				B22959CB27050EC2008ED4F4 /* CollectionViewManagementViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -323,8 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A4B087270001010080D466 /* iOSStoryboardBasedDemoProject.xcdatamodeld in Sources */,
+				B22959CF2705498D008ED4F4 /* UIViewControllerExtensions.swift in Sources */,
+				B22959C827050DC7008ED4F4 /* FormManagementViewController.swift in Sources */,
+				B22959CC27050EC2008ED4F4 /* CollectionViewManagementViewController.swift in Sources */,
 				B29D43CD2700088900077E58 /* ComponentModel.swift in Sources */,
 				B2A4B07D270001010080D466 /* AppDelegate.swift in Sources */,
+				B22959CA27050E7A008ED4F4 /* TableViewManagementViewController.swift in Sources */,
 				B29D43C9270005C700077E58 /* ComponentTableViewCell.swift in Sources */,
 				B29D43CF2700249C00077E58 /* ComponentSectionModel.swift in Sources */,
 				B29D43C52700050E00077E58 /* ComponentsViewController.swift in Sources */,
