@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     func showLoader(completion: (() -> Void)? = nil) {
-        let alert = UIAlertController(title: "Cargando", message: "Por favor espere...", preferredStyle: .alert)
+        let alert = UIAlertController(title: "", message: "Por favor espere...", preferredStyle: .alert)
         let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.large

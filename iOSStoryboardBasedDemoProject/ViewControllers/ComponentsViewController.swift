@@ -24,9 +24,9 @@ class ComponentsViewController: UIViewController {
             UISlider
             UIPicker
             UIScrollView
-            """),
-            ComponentModel(image: nil, name: "UITableView", description: ""),
-            ComponentModel(image: nil, name: "UICollectionView", description: ""),
+            """, segueName: "menuToForm"),
+            ComponentModel(image: nil, name: "UITableView", description: "", segueName: "menuToTable"),
+            ComponentModel(image: nil, name: "UICollectionView", description: "", segueName: "menuToCollection"),
             ComponentModel(image: nil, name: "UIPageControl", description: ""),
             ComponentModel(image: nil, name: "MapkitView", description: "")
         ]),
@@ -91,6 +91,7 @@ extension ComponentsViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let segueIdentifier = dataSource[indexPath.section].components[indexPath.row].segueName else { return }
+        self.performSegue(withIdentifier: segueIdentifier, sender: nil)
     }
 }
