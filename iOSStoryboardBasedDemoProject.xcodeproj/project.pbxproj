@@ -25,6 +25,10 @@
 		B2A4B097270001030080D466 /* iOSStoryboardBasedDemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4B096270001030080D466 /* iOSStoryboardBasedDemoProjectTests.swift */; };
 		B2A4B0A1270001030080D466 /* iOSStoryboardBasedDemoProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4B0A0270001030080D466 /* iOSStoryboardBasedDemoProjectUITests.swift */; };
 		B2A4B0A3270001030080D466 /* iOSStoryboardBasedDemoProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A4B0A2270001030080D466 /* iOSStoryboardBasedDemoProjectUITestsLaunchTests.swift */; };
+		B2E2E151270BFA8F004D5867 /* PersonTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2E14F270BFA8F004D5867 /* PersonTypeModel.swift */; };
+		B2E2E152270BFA8F004D5867 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2E150270BFA8F004D5867 /* PersonModel.swift */; };
+		B2E2E156270BFAA9004D5867 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E2E154270BFAA9004D5867 /* PersonTableViewCell.xib */; };
+		B2E2E157270BFAA9004D5867 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E2E155270BFAA9004D5867 /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		B2A4B09C270001030080D466 /* iOSStoryboardBasedDemoProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSStoryboardBasedDemoProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A4B0A0270001030080D466 /* iOSStoryboardBasedDemoProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSStoryboardBasedDemoProjectUITests.swift; sourceTree = "<group>"; };
 		B2A4B0A2270001030080D466 /* iOSStoryboardBasedDemoProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSStoryboardBasedDemoProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2E2E14F270BFA8F004D5867 /* PersonTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTypeModel.swift; sourceTree = "<group>"; };
+		B2E2E150270BFA8F004D5867 /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		B2E2E154270BFAA9004D5867 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		B2E2E155270BFAA9004D5867 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 		B29D43C62700057700077E58 /* XIBViews */ = {
 			isa = PBXGroup;
 			children = (
+				B2E2E153270BFAA9004D5867 /* PersonTableViewCell */,
 				B29D43D02700378D00077E58 /* ComponentTableViewCell */,
 			);
 			path = XIBViews;
@@ -113,6 +122,8 @@
 		B29D43CB2700086C00077E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2E2E150270BFA8F004D5867 /* PersonModel.swift */,
+				B2E2E14F270BFA8F004D5867 /* PersonTypeModel.swift */,
 				B29D43CC2700088900077E58 /* ComponentModel.swift */,
 				B29D43CE2700249C00077E58 /* ComponentSectionModel.swift */,
 			);
@@ -208,6 +219,15 @@
 			children = (
 			);
 			path = TutorialViewController;
+			sourceTree = "<group>";
+		};
+		B2E2E153270BFAA9004D5867 /* PersonTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2E154270BFAA9004D5867 /* PersonTableViewCell.xib */,
+				B2E2E155270BFAA9004D5867 /* PersonTableViewCell.swift */,
+			);
+			path = PersonTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +338,7 @@
 				B29D43CA270005C700077E58 /* ComponentTableViewCell.xib in Resources */,
 				B2A4B089270001030080D466 /* Assets.xcassets in Resources */,
 				B2A4B084270001010080D466 /* Main.storyboard in Resources */,
+				B2E2E156270BFAA9004D5867 /* PersonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,16 +363,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E2E152270BFA8F004D5867 /* PersonModel.swift in Sources */,
 				B2A4B087270001010080D466 /* iOSStoryboardBasedDemoProject.xcdatamodeld in Sources */,
 				B22959CF2705498D008ED4F4 /* UIViewControllerExtensions.swift in Sources */,
 				B22959C827050DC7008ED4F4 /* FormManagementViewController.swift in Sources */,
 				B22959CC27050EC2008ED4F4 /* CollectionViewManagementViewController.swift in Sources */,
 				B29D43CD2700088900077E58 /* ComponentModel.swift in Sources */,
 				B2A4B07D270001010080D466 /* AppDelegate.swift in Sources */,
+				B2E2E151270BFA8F004D5867 /* PersonTypeModel.swift in Sources */,
 				B22959CA27050E7A008ED4F4 /* TableViewManagementViewController.swift in Sources */,
 				B29D43C9270005C700077E58 /* ComponentTableViewCell.swift in Sources */,
 				B29D43CF2700249C00077E58 /* ComponentSectionModel.swift in Sources */,
 				B29D43C52700050E00077E58 /* ComponentsViewController.swift in Sources */,
+				B2E2E157270BFAA9004D5867 /* PersonTableViewCell.swift in Sources */,
 				B2A4B07F270001010080D466 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
