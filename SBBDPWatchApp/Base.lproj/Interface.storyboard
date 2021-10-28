@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19162" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19044"/>
+    </dependencies>
+    <scenes>
+        <!--People-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="People" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SBBDPWatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="15" id="XYg-wE-b8b">
+                            <items>
+                                <group width="1" alignment="left" spacing="5" id="MpP-6J-ab9">
+                                    <items>
+                                        <imageView width="30" alignment="left" image="maleIcon" contentMode="scaleAspectFit" id="xWK-CI-Zse"/>
+                                        <group width="1" widthAdjustment="-30" alignment="left" verticalAlignment="center" layout="vertical" id="PcV-2A-FwL">
+                                            <items>
+                                                <label alignment="left" text="User Name" id="UHQ-Td-ya7">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="18"/>
+                                                </label>
+                                                <label alignment="left" text="Friends Number" id="frG-dD-mYq">
+                                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="kEc-pB-iPB"/>
+                                <group width="1" alignment="left" id="fJE-O2-Der">
+                                    <items>
+                                        <group width="0.5" alignment="left" layout="vertical" id="3cn-va-JVV">
+                                            <items>
+                                                <imageView width="40" height="40" alignment="center" image="coupleIcon" contentMode="scaleAspectFit" id="bx3-tV-35F"/>
+                                                <label alignment="center" text="Couple" id="FFu-Rl-EpU">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                                </label>
+                                                <label alignment="center" text="Couple Name" id="hzh-jM-dTc">
+                                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.5" alignment="left" layout="vertical" id="33s-QG-4Oh">
+                                            <items>
+                                                <imageView width="40" height="40" alignment="center" image="petIcon" contentMode="scaleAspectFit" id="FG3-km-145"/>
+                                                <label alignment="center" text="Pet" id="dy8-xW-Wmq">
+                                                    <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                                </label>
+                                                <label alignment="center" text="Pet Name" id="afw-MS-12g">
+                                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="gyj-31-5gX"/>
+                                <group width="1" alignment="left" layout="vertical" id="Kqx-ID-3Az">
+                                    <items>
+                                        <label alignment="center" text="My People" id="MzJ-Og-oVd">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                        </label>
+                                        <table alignment="left" id="075-Wo-drK">
+                                            <items>
+                                                <tableRow identifier="PeopleCellId" id="m51-8U-f9H" customClass="PeopleCellRowController" customModule="SBBDPWatchApp_WatchKit_Extension">
+                                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="UQw-Ea-zTa">
+                                                        <items>
+                                                            <group width="82" alignment="left" layout="vertical" id="HV5-1w-N2I">
+                                                                <items>
+                                                                    <label width="95" alignment="left" text="Person Name" numberOfLines="0" id="fHI-Qt-N6D">
+                                                                        <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                                                    </label>
+                                                                    <label alignment="left" text="Person Short Description" numberOfLines="0" id="gzL-7w-tFA">
+                                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                                    </label>
+                                                                </items>
+                                                            </group>
+                                                            <imageView width="40" height="40" alignment="right" verticalAlignment="center" image="femaleIcon" id="MMN-D7-kS5"/>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                                    </group>
+                                                    <connections>
+                                                        <outlet property="personIconImage" destination="MMN-D7-kS5" id="OTX-Vd-Du1"/>
+                                                        <outlet property="personNameLabel" destination="fHI-Qt-N6D" id="jOv-1a-QBd"/>
+                                                        <outlet property="personShortDescriptionLabel" destination="gzL-7w-tFA" id="7OK-GA-UBA"/>
+                                                    </connections>
+                                                </tableRow>
+                                            </items>
+                                        </table>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="QMM-0C-gaJ"/>
+                                <button width="1" alignment="left" title="UI Components" id="tGj-nZ-eOb">
+                                    <connections>
+                                        <segue destination="kba-fR-Ktt" kind="push" id="XT9-se-dbN"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="Pdu-Bs-8K0">
+                        <items>
+                            <menuItem title="Aceptar" icon="accept" id="eNw-e6-s8j"/>
+                            <menuItem title="Agregar" icon="add" id="gjK-LO-Kp3"/>
+                            <menuItem title="Bloquear" icon="block" id="rJD-ca-huA"/>
+                            <menuItem title="Mas" icon="more" id="ydj-eD-XxX"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="coupleGroup" destination="3cn-va-JVV" id="lr4-Wc-ODT"/>
+                        <outlet property="coupleNameLabel" destination="hzh-jM-dTc" id="XkG-Wi-oBo"/>
+                        <outlet property="friendsNumberLabel" destination="frG-dD-mYq" id="dzO-7Q-FLT"/>
+                        <outlet property="peopleTable" destination="075-Wo-drK" id="N2E-Wg-EVs"/>
+                        <outlet property="petGroup" destination="33s-QG-4Oh" id="UhP-vn-5XA"/>
+                        <outlet property="petNameLabel" destination="afw-MS-12g" id="0mZ-Yh-Q0X"/>
+                        <outlet property="profileGroup" destination="MpP-6J-ab9" id="uqN-9R-MP3"/>
+                        <outlet property="userImage" destination="xWK-CI-Zse" id="mic-q8-09U"/>
+                        <outlet property="userNamelabel" destination="UHQ-Td-ya7" id="5ID-hV-DEf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-259"/>
+        </scene>
+        <!--Components Interface Controller-->
+        <scene sceneID="uu0-iR-J3X">
+            <objects>
+                <controller id="kba-fR-Ktt" customClass="UIComponentsInterfaceController" customModule="SBBDPWatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="10" id="g9V-y2-a5s">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="xTm-Np-Ef8">
+                                    <items>
+                                        <label alignment="center" text="WKSwitch" textAlignment="center" id="2RN-57-yQ3">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="19"/>
+                                        </label>
+                                        <label alignment="left" text="Value: true" id="ghw-mB-HyU"/>
+                                        <switch width="1" alignment="left" value="YES" title="Switch" id="Ox7-js-fTt">
+                                            <connections>
+                                                <action selector="didChangeSwitchValue:" destination="kba-fR-Ktt" id="9Vw-YA-nav"/>
+                                            </connections>
+                                        </switch>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="qPc-9B-VY9"/>
+                                <group width="1" alignment="left" layout="vertical" id="D7s-90-VkJ">
+                                    <items>
+                                        <label height="20" alignment="center" text="WKSlider" id="HLt-aP-wSg">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                        </label>
+                                        <label alignment="left" text="Value: 0.0" id="Ynk-zs-mar"/>
+                                        <slider width="1" alignment="left" maximum="5" steps="5" id="9U3-K0-obc">
+                                            <connections>
+                                                <action selector="didChangeSliderValue:" destination="kba-fR-Ktt" id="AHK-en-pQe"/>
+                                            </connections>
+                                        </slider>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="4oM-aG-XZv"/>
+                                <group width="1" alignment="left" layout="vertical" id="e7x-Vv-2fg">
+                                    <items>
+                                        <label alignment="center" text="WKTextField" id="crt-CW-Zpf">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                        </label>
+                                        <textField width="1" alignment="left" placeholder="Escribe algo..." id="qgA-yk-mZm"/>
+                                    </items>
+                                </group>
+                                <separator alignment="left" id="BmK-Et-8zU"/>
+                                <group width="1" alignment="left" layout="vertical" id="Jsj-2a-gVM">
+                                    <items>
+                                        <label alignment="center" text="WKPicker" id="VVh-Rd-CYk">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                        </label>
+                                        <label alignment="left" text="Value: Option 0" id="2rC-X2-cye"/>
+                                        <button width="1" alignment="left" title="Show Picker" id="oj9-hG-zvE">
+                                            <connections>
+                                                <segue destination="mUp-tQ-l65" kind="modal" identifier="PickerSegueId" id="NOq-D9-zKW"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="pickerValueLabel" destination="2rC-X2-cye" id="ad0-EO-eoD"/>
+                        <outlet property="sliderComponent" destination="9U3-K0-obc" id="syS-Or-QL9"/>
+                        <outlet property="sliderValueLabel" destination="Ynk-zs-mar" id="5Rp-1x-l3d"/>
+                        <outlet property="switchComponent" destination="Ox7-js-fTt" id="cX4-VF-eFU"/>
+                        <outlet property="switchValueLabel" destination="ghw-mB-HyU" id="ife-np-Tey"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="517" y="-259.5"/>
+        </scene>
+        <!--Picker-->
+        <scene sceneID="TMB-B9-5M9">
+            <objects>
+                <controller identifier="Picker" hidesWhenLoading="NO" id="mUp-tQ-l65" customClass="PickerInterfaceController" customModule="SBBDPWatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="ceT-0R-tBF">
+                            <items>
+                                <button width="1" height="38" alignment="left" title="Listo" id="kIR-uq-uGp"/>
+                                <picker width="1" height="1" heightAdjustment="-38" alignment="center" verticalAlignment="bottom" focusStyle="stack" id="bxS-eA-jII">
+                                    <connections>
+                                        <action selector="didChangePickerValue:" destination="mUp-tQ-l65" id="2xd-S8-hcP"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="pickerComponent" destination="bxS-eA-jII" id="ghS-6Z-lBc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="809" y="-259"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-80" y="651"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SBBDPWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="651"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="SBBDPWatchApp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="1035"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coupleIcon" width="48" height="48"/>
+        <image name="femaleIcon" width="48" height="48"/>
+        <image name="maleIcon" width="48" height="48"/>
+        <image name="petIcon" width="48" height="48"/>
+    </resources>
+</document>
