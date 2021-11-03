@@ -5,10 +5,10 @@ target 'iOSStoryboardBasedDemoProject' do
   use_frameworks!
 
   # Pods for iOSStoryboardBasedDemoProject
-  pod 'SDWebImage'
+  pod 'Charts'
+  pod 'Kingfisher'
 
   target 'iOSStoryboardBasedDemoProjectTests' do
-    inherit! :search_paths
     # Pods for testing
   end
 

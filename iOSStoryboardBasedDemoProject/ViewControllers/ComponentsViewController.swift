@@ -28,7 +28,8 @@ class ComponentsViewController: UIViewController {
             ComponentModel(image: nil, name: "UITableView", description: "", segueName: "menuToTable"),
             ComponentModel(image: nil, name: "UICollectionView", description: "", segueName: "menuToCollection"),
             ComponentModel(image: nil, name: "UIPageControl", description: ""),
-            ComponentModel(image: nil, name: "MapkitView", description: "")
+            ComponentModel(image: nil, name: "MapkitView", description: ""),
+            ComponentModel(image: nil, name: "Charts", description: "", segueName: "menuToCharts")
         ]),
         ComponentSectionModel(title: "Animations", components: [
             ComponentModel(image: nil, name: "UIView.Animate", description: ""),

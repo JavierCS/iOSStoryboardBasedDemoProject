@@ -36,6 +36,7 @@
                         <segue destination="G7N-xV-xFt" kind="show" identifier="menuToForm" id="uMq-OK-Ze1"/>
                         <segue destination="qLT-bF-TEX" kind="show" identifier="menuToTable" id="D8q-xR-D1e"/>
                         <segue destination="JXr-bt-soC" kind="show" identifier="menuToCollection" id="sJ9-hH-jmh"/>
+                        <segue destination="ZWL-ra-fsg" kind="show" identifier="menuToCharts" id="TV6-EG-V14"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,6 +105,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozB-Su-GRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2483" y="860"/>
+        </scene>
+        <!--Charts View Controller-->
+        <scene sceneID="Fmc-Lx-uzo">
+            <objects>
+                <viewController id="ZWL-ra-fsg" customClass="ChartsViewController" customModule="iOSStoryboardBasedDemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsi-pu-FXM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t6H-zg-dFt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yjX-vp-adY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yjX-vp-adY" firstAttribute="trailing" secondItem="t6H-zg-dFt" secondAttribute="trailing" id="7q3-My-3pP"/>
+                            <constraint firstItem="yjX-vp-adY" firstAttribute="bottom" secondItem="t6H-zg-dFt" secondAttribute="bottom" id="J8q-Dy-6T1"/>
+                            <constraint firstItem="t6H-zg-dFt" firstAttribute="leading" secondItem="yjX-vp-adY" secondAttribute="leading" id="Th9-Ck-ISe"/>
+                            <constraint firstItem="t6H-zg-dFt" firstAttribute="top" secondItem="yjX-vp-adY" secondAttribute="top" id="hCS-Cm-ylb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tBd-wo-ac5"/>
+                    <connections>
+                        <outlet property="chartsTable" destination="t6H-zg-dFt" id="PO4-si-lkk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Htc-8m-P8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3239" y="860"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yNn-VZ-sLe">

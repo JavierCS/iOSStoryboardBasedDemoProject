@@ -1,0 +1,6 @@
+framework module Pods_iOSStoryboardBasedDemoProject_iOSStoryboardBasedDemoProjectUITests {
+  umbrella header "Pods-iOSStoryboardBasedDemoProject-iOSStoryboardBasedDemoProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
