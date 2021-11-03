@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_iOSStoryboardBasedDemoProject_iOSStoryboardBasedDemoProjectUITests : NSObject
-@end
-@implementation PodsDummy_Pods_iOSStoryboardBasedDemoProject_iOSStoryboardBasedDemoProjectUITests
-@end
